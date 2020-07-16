@@ -4,7 +4,7 @@ export function readableStuffPrice(price) {
     return readableStuff;
 }
 
-export function renderTableRow(cartItem, stuff) {
+export default function renderTableRow(cartItem, stuff) {
     const tr = document.createElement('tr');
 
     const nameTd = document.createElement('td');
