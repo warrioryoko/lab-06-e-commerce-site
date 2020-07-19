@@ -26,7 +26,7 @@ const redFish = {
 };
 
 const blueFish = {
-	id: 'blueFish',
+    id: 'blueFish',
     name: 'Blue Fish',
     image: '/blue-fish.jpg',
     description: 'The Blue Fish',
@@ -38,19 +38,19 @@ const thingOne = {
     id: 'thingOne',
     name: 'Thing One',
     image: '/thing-one.png',
-    description: "A thing that pays a visit to children learning to count",
+    description: 'A thing that pays a visit to children learning to count',
     category: 'thing',
     price: 0.00
-}
+};
 
 const thingTwo = {
     id: 'thingTwo',
     name: 'Thing Two',
     image: '/thing-two.jpg',
-    description: "A second thing that pays a visit to children learning to count",
+    description: 'A second thing that pays a visit to children learning to count',
     category: 'thing',
     price: 0.00
-}
+};
 
 const stuff = [
     oneFish,
