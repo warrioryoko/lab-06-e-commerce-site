@@ -2,7 +2,7 @@ import renderStuff from '../products/render-stuff.js';
 import stuff from '../data/stuff.js';
 import cart from '../data/cart.js';
 import renderTableRow from '../cart/render-line-item.js';
-import { findById } from '../common/utils.js';
+import { findById, calcLineItem, calcOrderTotal } from '../common/utils.js';
 
 const test = QUnit.test;
 
@@ -21,3 +21,17 @@ test('This should match a stuff item by its id', assert => {
     //Expect
     assert.equal(findThing.name, expected);
 });
+
+test('This should calculate the total of a line item', assert => {
+    //Arrange
+    const quantity = 10;
+    const price = 150;
+
+    const expected = 1500;
+
+    //Act
+    const total = calcLineItem(quantity, price);
+
+    //Expect
+    assert.equal(total, expected);
+})

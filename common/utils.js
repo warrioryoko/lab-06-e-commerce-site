@@ -10,7 +10,7 @@ export function findById(items, id) {
     return null;
 }
 
-export function calcLineTotal(quantity, price) {
+export function calcLineItem(quantity, price) {
     const amount = quantity * price;
     return roundStuff(amount);
 }
@@ -25,7 +25,7 @@ export function calcOrderTotal (cart, stuff) {
     for (let i = 0; i < cart.length; i++) {
         const lineItem = cart[i];
         const matchingStuff = findById(stuff, lineItem.id);
-        const lineTotal = calcLineTotal(lineItem.quantity, matchingStuff.price);
+        const lineTotal = calcLineItem(lineItem.quantity, matchingStuff.price);
         orderTotal += lineTotal;
     }
 
