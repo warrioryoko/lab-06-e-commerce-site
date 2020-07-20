@@ -1,17 +1,12 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import renderStuff from '../products/render-stuff.js';
-
 import stuff from '../data/stuff.js';
 import cart from '../data/cart.js';
 import renderTableRow from '../cart/render-line-item.js';
 
 const test = QUnit.test;
 console.log(stuff);
-
-test('this should take match a stuff item against an id from cart, and render it in a table as HTML', (expect) => {
-
-})
 
 test('this should take in a stuff item, and render its properties as an HTML element', (expect) => {
     //Arrange
