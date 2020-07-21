@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stuff Shop</title>
+    <link rel="stylesheet" href="../common/main.css">
+</head>
+<body>
+    <header>
+        <h1>The Strange Stuff Shop</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../products/index.html">Buy Something!</a>
+            <a href="../cart/index.html">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th class="align-left">Stuff</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- render function should past table here -->
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Order Total:</th>
+                    <th id="order-total-cell"></th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p class="order-now-container">
+            <button>Place Order</button>
+        </p>
+    </main>
+
+    <script type="module" src="shopping-cart.js"></script>
+</body>
+</html>
