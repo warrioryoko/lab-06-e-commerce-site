@@ -19,7 +19,7 @@ export function roundStuff(amount) {
     return Math.round(amount * 100) / 100;
 }
 
-export function calcOrderTotal (cart, stuff) {
+export function calcOrderTotal(cart, stuff) {
     let orderTotal = 0;
 
     for (let i = 0; i < cart.length; i++) {
