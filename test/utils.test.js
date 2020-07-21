@@ -34,4 +34,15 @@ test('This should calculate the total of a line item', assert => {
 
     //Expect
     assert.equal(total, expected);
-})
+});
+
+test('This should calculate the order total', (assert) => {
+    //Arrange
+    const expected = 52;
+
+    //Act
+    const orderTotal = calcOrderTotal(cart, stuff);
+    
+    //Expect
+    assert.equal(orderTotal, expected);
+});

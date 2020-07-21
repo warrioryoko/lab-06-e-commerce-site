@@ -1,6 +1,6 @@
 export function readableStuffPrice(price) {
+    //WELL. I thought this would work. Turns out it really doesn't.
     const readableStuff =  `$${Number(price).toFixed(2)}`;
-
     return readableStuff;
 }
 
